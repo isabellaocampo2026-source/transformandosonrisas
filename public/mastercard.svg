@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 500">
+  <rect width="780" height="500" rx="40" ry="40" fill="#252525"/>
+  <!-- Left circle (red) -->
+  <circle cx="290" cy="250" r="155" fill="#EB001B"/>
+  <!-- Right circle (orange) -->
+  <circle cx="490" cy="250" r="155" fill="#F79E1B"/>
+  <!-- Overlap blended (orange) -->
+  <path d="M390 130 Q450 180 490 250 Q450 320 390 370 Q330 320 290 250 Q330 180 390 130Z" fill="#FF5F00"/>
+</svg>

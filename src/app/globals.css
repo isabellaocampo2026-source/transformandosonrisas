@@ -1,26 +1,333 @@
-@import "tailwindcss";
-
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Colors - Ultra Premium Clinical Palette based on Official Logo */
+  --color-primary: #064031;
+  /* Forest Green - Exact brand color extracted from logo */
+  --color-primary-light: #D6E8E1;
+  /* Soft green wash for backgrounds */
+  --color-primary-dark: #042E1F;
+  /* Deep shade for hovers, headings and high contrast */
+
+  --color-accent: #0F172A;
+  /* Deep Navy/Slate - Authority and trust */
+  --color-accent-light: #F1F5F9;
+  /* Soft slate wash */
+
+  --color-text-main: #1F2937;
+  /* Slate 800 - Deep, rich readable text */
+  --color-text-muted: #6B7280;
+  /* Slate 500 - Refined grey */
+
+  --color-bg-light: #FAFAFA;
+  /* Off-white / Studio Gray */
+  --color-bg-white: #FFFFFF;
+  /* Clinical White - Used massively */
+
+  --color-border: #E2E8F0;
+  /* Razor-thin separator line */
+
+  /* Typography */
+  --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Bebas Neue', sans-serif;
+
+  /* Spacing - Expanded for maximum "breathing room" */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2.5rem;
+  --spacing-xl: 4rem;
+  --spacing-2xl: 6rem;
+  --spacing-3xl: 8rem;
+  --spacing-4xl: 10rem;
+
+  /* Border Radius - Crisper, more architectural */
+  --radius-sm: 0px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  /* Subtle rounding, no bubbly shapes */
+  --radius-xl: 12px;
+  --radius-full: 9999px;
+  /* Reserved for icon buttons */
+
+  /* Shadows - Studio Lighting (Soft, highly dispersed, low opacity) */
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 20px 40px -10px rgba(0, 0, 0, 0.08);
+  --shadow-glow: 0 0 30px rgba(15, 23, 42, 0.15);
+  /* Deep slate aura, no yellow */
+
+  /* Transitions */
+  --transition-fast: 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-normal: 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-slow: 700ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  font-family: var(--font-primary);
+  color: var(--color-text-main);
+  background-color: var(--color-bg-white);
+  /* Enforce Clinical White background */
+  scroll-behavior: smooth;
+  line-height: 1.8;
+  /* Higher line-height for readability */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  /* Bebas Neue typically uses regular weight */
+  line-height: 1.1;
+  color: var(--color-text-main);
+  margin-bottom: var(--spacing-sm);
+  letter-spacing: 0.05em;
+  /* Bebas Neue benefits from wide tracking */
+  /* Tighter tracking for headings */
+}
+
+h1 strong,
+h2 strong,
+h3 strong {
+  font-weight: 600;
+}
+
+p {
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-md);
+  font-weight: 300;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Layout Utilities */
+.container {
+  width: 100%;
+  max-width: 1440px;
+  /* Wider container for high-end panoramic feel */
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.section {
+  padding: var(--spacing-3xl) 0;
+}
+
+/* Flexbox Utilities */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-sm {
+  gap: var(--spacing-sm);
+}
+
+.gap-md {
+  gap: var(--spacing-md);
+}
+
+.gap-lg {
+  gap: var(--spacing-lg);
+}
+
+.gap-xl {
+  gap: var(--spacing-xl);
+}
+
+.gap-2xl {
+  gap: var(--spacing-2xl);
+}
+
+.gap-3xl {
+  gap: var(--spacing-3xl);
+}
+
+.gap-4xl {
+  gap: var(--spacing-4xl);
+}
+
+/* Grid Utilities */
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Buttons - Elegant & Understated */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2.5rem;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  border-radius: var(--radius-sm);
+  /* Sharp edges for high-end look */
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  text-decoration: none;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-primary-dark);
+  border: 1.5px solid var(--color-primary-dark);
+}
+
+.btn-outline:hover {
+  background-color: rgba(4, 46, 31, 0.05);
+  /* Extremely subtle wash of the primary color */
+  color: var(--color-primary-dark);
+  transform: translateY(-1px);
+}
+
+/* Glassmorphism -> Crisp Editorial Cards */
+.glass {
+  background: var(--color-bg-white);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-normal);
+}
+
+.glass:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* Visibility Utilities */
+.hidden-desktop {
+  display: none !important;
+}
+
+.visible-mobile {
+  display: none !important;
+}
+
+.hidden-mobile {
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+
+  .grid-cols-2,
+  .grid-cols-3,
+  .grid-cols-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .gap-xl,
+  .gap-2xl,
+  .gap-3xl,
+  .gap-4xl {
+    gap: var(--spacing-md);
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .hidden-mobile {
+    display: none !important;
+  }
+
+  .visible-mobile {
+    display: block !important;
+  }
+
+  .hidden-desktop {
+    display: block !important;
+  }
 }
