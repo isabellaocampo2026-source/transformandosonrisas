@@ -80,11 +80,11 @@ export default async function BlogPostPage({ params }) {
     };
 
     return (
-        <main style={{ backgroundColor: 'var(--color-bg-white)', minHeight: '100vh' }}>
+        <main style={{ paddingTop: '150px', backgroundColor: 'var(--color-bg-white)', minHeight: '100vh' }}>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
             {/* Breadcrumb bar */}
-            <div style={{ paddingTop: '100px', paddingBottom: 'var(--spacing-lg)', backgroundColor: 'var(--color-bg-light)' }}>
+            <div style={{ paddingTop: '150px', paddingBottom: 'var(--spacing-lg)', backgroundColor: 'var(--color-bg-light)' }}>
                 <div className="container" style={{ maxWidth: '850px' }}>
                     <div className="flex" style={{ justifyContent: 'space-between', alignItems: 'center' }}>
                         <Link href="/blog" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: 'var(--color-text-light)', textDecoration: 'none', fontWeight: 500, fontSize: '0.95rem' }}>

@@ -1,4 +1,3 @@
-import { CheckCircle2 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -9,7 +8,7 @@ export const metadata = {
 
 export default function DoctorProfile() {
     return (
-        <main style={{ paddingTop: '80px', backgroundColor: 'var(--color-bg-light)', minHeight: '100vh' }}>
+        <main style={{ paddingTop: '150px', backgroundColor: 'var(--color-bg-light)', minHeight: '100vh' }}>
             <section className="section doctor-section">
                 <div className="container">
                     <div className="doctor-grid">
@@ -27,16 +26,24 @@ export default function DoctorProfile() {
                             <h3 className="doctor-title">Cirujano Dentista</h3>
 
                             <div className="doctor-bio" style={{ fontSize: '1.1rem', lineHeight: '1.8', color: 'var(--color-text-main)' }}>
-                                <p style={{ marginBottom: 'var(--spacing-md)' }}>Con una trayectoria fundamentada en la excelencia académica y clínica, la Dra. Carrillo obtuvo su título como <b>Cirujano Dentista en el año 2000</b>, siendo acreedora de los primeros lugares de aprovechamiento tanto a nivel de licenciatura como en sus estudios de posgrado.</p>
-                                <p style={{ marginBottom: 'var(--spacing-md)' }}>Perfeccionó su práctica médica realizando un riguroso postgrado como <b>Residente de Odontología Integral Avanzada</b>, donde completó exhaustivas rotaciones clínicas a través de todas las especialidades oclusales y reconstructivas en los centros de salud más prestigiosos de la Ciudad de México y Monterrey.</p>
-                                <p style={{ marginBottom: 'var(--spacing-md)' }}>Su visión médica profesional trasciende la práctica privada. Además de liderar los tratamientos de especialidad en nuestra clínica, su profundo conocimiento y juicio clínico le han permitido colaborar activamente <b>asesorando a otros odontólogos en la resolución de casos médicos prequirúrgicos y de alta complejidad</b>.</p>
+                                <p style={{ marginBottom: 'var(--spacing-md)' }}>Con una trayectoria fundamentada en la excelencia académica y clínica, la Dra. Carrillo obtuvo su título como Cirujano Dentista en el año 2000, siendo acreedora de los primeros lugares de aprovechamiento tanto a nivel de licenciatura como en sus estudios de posgrado.</p>
+                                <p style={{ marginBottom: 'var(--spacing-md)' }}>Perfeccionó su práctica médica realizando un riguroso postgrado como Residente de Odontología Integral Avanzada, donde completó exhaustivas rotaciones clínicas a través de todas las especialidades oclusales y reconstructivas en los centros de salud más prestigiosos de la Ciudad de México y Monterrey.</p>
+                                <p style={{ marginBottom: 'var(--spacing-md)' }}>Su visión médica profesional trasciende la práctica privada. Además de liderar los tratamientos de especialidad en nuestra clínica, su profundo conocimiento y juicio clínico le han permitido colaborar activamente asesorando a otros odontólogos en la resolución de casos médicos prequirúrgicos y de alta complejidad.</p>
                             </div>
 
-                            <ul className="feature-list" style={{ marginTop: 'var(--spacing-xl)', marginBottom: 'var(--spacing-xl)', fontSize: '1.05rem' }}>
-                                <li style={{ marginBottom: 'var(--spacing-sm)', display: 'flex', alignItems: 'center', gap: '12px' }}><CheckCircle2 size={20} color="var(--color-primary)" /> <b>Catedrática Universitaria:</b> 13 años de experiencia docente en la Facultad de Odontología.</li>
-                                <li style={{ marginBottom: 'var(--spacing-sm)', display: 'flex', alignItems: 'center', gap: '12px' }}><CheckCircle2 size={20} color="var(--color-primary)" /> Miembro de <b>The Academy of Operative Dentistry</b>.</li>
-                                <li style={{ marginBottom: 'var(--spacing-sm)', display: 'flex', alignItems: 'center', gap: '12px' }}><CheckCircle2 size={20} color="var(--color-primary)" /> Miembro de la <b>Asociación Dental Mexicana (ADM)</b>.</li>
-                                <li style={{ display: 'flex', alignItems: 'center', gap: '12px' }}><CheckCircle2 size={20} color="var(--color-primary)" /> Miembro del <b>Colegio de Odontólogos de Nuevo León</b>.</li>
+                            <ul className="feature-list" style={{ marginTop: 'var(--spacing-xl)', marginBottom: 'var(--spacing-xl)', fontSize: '1.05rem', listStyle: 'none', padding: 0 }}>
+                                <li style={{ marginBottom: 'var(--spacing-sm)', display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
+                                    <span style={{ color: 'var(--color-primary)' }}>•</span> Catedrática Universitaria: 13 años de experiencia docente en la Facultad de Odontología.
+                                </li>
+                                <li style={{ marginBottom: 'var(--spacing-sm)', display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
+                                    <span style={{ color: 'var(--color-primary)' }}>•</span> Miembro de The Academy of Operative Dentistry.
+                                </li>
+                                <li style={{ marginBottom: 'var(--spacing-sm)', display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
+                                    <span style={{ color: 'var(--color-primary)' }}>•</span> Miembro de la Asociación Dental Mexicana (ADM).
+                                </li>
+                                <li style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
+                                    <span style={{ color: 'var(--color-primary)' }}>•</span> Miembro del Colegio de Odontólogos de Nuevo León.
+                                </li>
                             </ul>
 
                             <div className="flex gap-md doctor-cta-buttons" style={{ marginTop: 'var(--spacing-2xl)' }}>

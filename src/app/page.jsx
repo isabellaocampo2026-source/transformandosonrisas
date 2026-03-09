@@ -10,7 +10,7 @@ export default function Home() {
     return (
         <main>
             {/* Desktop Hero Section */}
-            <section className="hero container hidden-mobile" style={{ paddingTop: '120px', paddingBottom: 'var(--spacing-3xl)' }}>
+            <section className="hero container hidden-mobile" style={{ paddingTop: '150px', paddingBottom: 'var(--spacing-3xl)' }}>
                 <div className="grid grid-cols-2 gap-4xl" style={{ alignItems: 'center' }}>
                     <div className="flex flex-col items-start text-left animate-fade-in content-pad-right">
                         <h1 className="hero-title">Dentista en<br /><span className="text-gradient">San Pedro</span></h1>
@@ -39,7 +39,7 @@ export default function Home() {
                 width: '100%',
                 display: 'flex',
                 flexDirection: 'column',
-                paddingTop: '130px', // Massive padding for navbar clearance and breathing room
+                paddingTop: '160px', // Massive padding for navbar clearance and breathing room
                 backgroundColor: 'var(--color-bg-white)'
             }}>
                 {/* App Content First - Very Bright, High Contrast */}

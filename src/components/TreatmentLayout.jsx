@@ -4,7 +4,7 @@ import { ArrowLeft } from 'lucide-react';
 
 export default function TreatmentLayout({ title, subtitle, imageSrc, children }) {
     return (
-        <main style={{ paddingTop: '80px', backgroundColor: 'var(--color-bg-white)', minHeight: '100vh' }}>
+        <main style={{ paddingTop: '150px', backgroundColor: 'var(--color-bg-white)', minHeight: '100vh' }}>
             <section className="section">
                 <div className="container" style={{ maxWidth: '800px', paddingLeft: 'var(--spacing-lg)', paddingRight: 'var(--spacing-lg)' }}>
 

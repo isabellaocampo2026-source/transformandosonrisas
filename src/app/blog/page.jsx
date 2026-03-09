@@ -21,7 +21,7 @@ export default function BlogIndex() {
     }
 
     return (
-        <main style={{ paddingTop: '130px', paddingBottom: 'var(--spacing-4xl)', backgroundColor: 'var(--color-bg-light)' }}>
+        <main style={{ paddingTop: '180px', paddingBottom: 'var(--spacing-4xl)', backgroundColor: 'var(--color-bg-light)' }}>
             <div className="container">
                 {/* Page Header */}
                 <header style={{ marginBottom: 'var(--spacing-3xl)', borderBottom: '1px solid var(--color-border)', paddingBottom: 'var(--spacing-xl)' }}>

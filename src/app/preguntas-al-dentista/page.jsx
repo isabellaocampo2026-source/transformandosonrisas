@@ -46,7 +46,7 @@ const faqs = [
 
 export default function FAQ() {
     return (
-        <main style={{ paddingTop: '80px', backgroundColor: 'var(--color-bg-white)', minHeight: '100vh' }}>
+        <main style={{ paddingTop: '150px', backgroundColor: 'var(--color-bg-white)', minHeight: '100vh' }}>
             <section className="section">
                 <div className="container" style={{ maxWidth: '800px' }}>
                     <div className="text-center" style={{ marginBottom: 'var(--spacing-4xl)' }}>
