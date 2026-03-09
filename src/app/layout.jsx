@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         "@context": "https://schema.org",
         "@type": "Dentist",
         "name": "Dra. Carmen Carrillo Viejo | Transformando Sonrisas",
-        "url": "https://carmencarrillo.com",
+        "url": "https://transformandosonrisas.com.mx",
         "telephone": "+528182522667",
         "address": {
             "@type": "PostalAddress",

@@ -5,6 +5,6 @@ export default function robots() {
             allow: '/',
             disallow: '/private/',
         },
-        sitemap: 'https://carmencarrillo.com/sitemap.xml',
+        sitemap: 'https://transformandosonrisas.com.mx/sitemap.xml',
     }
 }

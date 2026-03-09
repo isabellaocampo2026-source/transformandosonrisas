@@ -1,5 +1,5 @@
 export default function sitemap() {
-    const baseUrl = 'https://carmencarrillo.com';
+    const baseUrl = 'https://transformandosonrisas.com.mx';
 
     // Definición de las páginas estáticas
     const routes = [
