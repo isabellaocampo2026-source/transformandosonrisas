@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-primary' });
 const bebas = Bebas_Neue({ weight: '400', subsets: ['latin'], variable: '--font-heading' });
 
 export const metadata = {
+    metadataBase: new URL('https://transformandosonrisas.com.mx'),
     title: 'Dentista en San Pedro Garza García | Dra. Carmen Carrillo',
     description: 'Encuentra tu clínica dental de confianza cerca de ti en San Pedro Garza García. Odontología integral de lujo, diseño de sonrisa y tratamientos de vanguardia.',
 };
