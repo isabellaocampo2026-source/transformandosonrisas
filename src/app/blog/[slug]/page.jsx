@@ -60,6 +60,22 @@ export default async function BlogPostPage({ params }) {
     const post = blogPosts.find((p) => p.slug === slug);
     if (!post) notFound();
 
+    const treatmentMap = {
+        "mitos-blanqueamiento-dental-2024": { slug: "blanqueamiento-dental", name: "Blanqueamiento Dental" },
+        "primera-visita-dentista-ninos": { slug: "odontopediatria", name: "Odontopediatría" },
+        "celulas-madre-dentales-futuro": { slug: "celulas-madre-con-dientes", name: "Células Madre" },
+        "ortodoncia-adultos-nunca-es-tarde": { slug: "ortodoncia", name: "Ortodoncia" },
+        "diseno-sonrisa-que-esperar": { slug: "odontologia-estetica", name: "Odontología Estética" },
+        "rehabilitacion-oral-cuando-necesitarla": { slug: "rehabilitacion", name: "Rehabilitación Oral" },
+        "endodoncia-tratamiento-conducto-sin-dolor": { slug: "endodoncia", name: "Endodoncia" },
+        "ronquidos-solucion-dental": { slug: "ronquidos", name: "Tratamiento de Ronquidos" },
+        "laser-dental-que-puede-tratar": { slug: "laser", name: "Láser Dental" },
+        "salud-dental-embarazo-guia-completa": { slug: "embarazo", name: "Odontología en el Embarazo" },
+        "salud-dental-adulto-mayor": { slug: "odontogeriatria", name: "Odontogeriatría" },
+    };
+
+    const relatedTreatment = treatmentMap[post.slug];
+
     const articleSchema = {
         "@context": "https://schema.org",
         "@type": "Article",
@@ -139,13 +155,15 @@ export default async function BlogPostPage({ params }) {
                     <a href="https://wa.me/528182522667?text=Hola%2C%20estaba%20leyendo%20su%20blog%20y%20me%20gustar%C3%ADa%20agendar%20una%20valoraci%C3%B3n." target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ display: 'inline-block' }}>Agendar Valoración por WhatsApp</a>
                 </div>
 
-                {/* Article footer / Tags */}
-                <div style={{ marginTop: 'var(--spacing-2xl)', paddingTop: 'var(--spacing-xl)', borderTop: '1px solid var(--color-border)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <Link href="/blog" className="btn btn-outline" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
-                        <ArrowLeft size={18} /> Más artículos
-                    </Link>
-                    <Link href={`/tratamientos/blanqueamiento-dental`} style={{ color: 'var(--color-primary)', fontWeight: 600, textDecoration: 'none', fontSize: '0.9rem' }}>
-                        Ver Tratamiento de Blanqueamiento →
+                {/* Article footer */}
+                <div className="flex flex-col gap-md" style={{ marginTop: 'var(--spacing-2xl)', paddingTop: 'var(--spacing-xl)', borderTop: '1px solid var(--color-border)' }}>
+                    {relatedTreatment && (
+                        <Link href={`/tratamientos/${relatedTreatment.slug}`} style={{ color: 'var(--color-primary-dark)', fontWeight: 700, textDecoration: 'none', fontSize: '1.1rem', display: 'inline-block', paddingBottom: 'var(--spacing-sm)' }}>
+                            Saber más sobre {relatedTreatment.name} <span style={{ color: 'var(--color-primary)' }}>→</span>
+                        </Link>
+                    )}
+                    <Link href="/blog" className="btn btn-outline" style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', alignSelf: 'flex-start' }}>
+                        <ArrowLeft size={18} /> Volver al índice del blog
                     </Link>
                 </div>
             </article>
