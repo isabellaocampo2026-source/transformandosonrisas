@@ -37,8 +37,8 @@ export default function Contact() {
                                 backgroundColor: 'var(--color-bg-white)', border: '1px solid var(--color-border)',
                                 textDecoration: 'none', color: 'var(--color-text-main)'
                             }}>
-                                <div style={{ width: '44px', height: '44px', borderRadius: '50%', backgroundColor: 'var(--color-primary-light)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                                    <Phone size={20} style={{ color: 'var(--color-primary)' }} />
+                                <div style={{ width: '44px', height: '44px', borderRadius: '50%', backgroundColor: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                                    <Phone size={20} style={{ color: '#ffffff' }} />
                                 </div>
                                 <div>
                                     <p style={{ margin: 0, fontWeight: 600, fontSize: '1rem', color: 'var(--color-text-main)' }}>Llamar ahora</p>
@@ -53,8 +53,8 @@ export default function Contact() {
                                 backgroundColor: 'var(--color-bg-white)', border: '1px solid var(--color-border)',
                                 textDecoration: 'none', color: 'var(--color-text-main)'
                             }}>
-                                <div style={{ width: '44px', height: '44px', borderRadius: '50%', backgroundColor: 'var(--color-primary-light)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                                    <Mail size={20} style={{ color: 'var(--color-primary)' }} />
+                                <div style={{ width: '44px', height: '44px', borderRadius: '50%', backgroundColor: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                                    <Mail size={20} style={{ color: '#ffffff' }} />
                                 </div>
                                 <div style={{ overflow: 'hidden' }}>
                                     <p style={{ margin: 0, fontWeight: 600, fontSize: '1rem', color: 'var(--color-text-main)' }}>Enviar correo</p>
@@ -69,8 +69,8 @@ export default function Contact() {
                                 backgroundColor: 'var(--color-bg-white)', border: '1px solid var(--color-border)',
                                 textDecoration: 'none', color: 'var(--color-text-main)'
                             }}>
-                                <div style={{ width: '44px', height: '44px', borderRadius: '50%', backgroundColor: 'var(--color-primary-light)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                                    <MapPin size={20} style={{ color: 'var(--color-primary)' }} />
+                                <div style={{ width: '44px', height: '44px', borderRadius: '50%', backgroundColor: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                                    <MapPin size={20} style={{ color: '#ffffff' }} />
                                 </div>
                                 <div>
                                     <p style={{ margin: 0, fontWeight: 600, fontSize: '1rem', color: 'var(--color-text-main)' }}>Cómo llegar</p>
@@ -84,8 +84,8 @@ export default function Contact() {
                                 padding: '20px', borderRadius: 'var(--radius-lg)',
                                 backgroundColor: 'var(--color-bg-white)', border: '1px solid var(--color-border)'
                             }}>
-                                <div style={{ width: '44px', height: '44px', borderRadius: '50%', backgroundColor: 'var(--color-primary-light)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                                    <Clock size={20} style={{ color: 'var(--color-primary)' }} />
+                                <div style={{ width: '44px', height: '44px', borderRadius: '50%', backgroundColor: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                                    <Clock size={20} style={{ color: '#ffffff' }} />
                                 </div>
                                 <div>
                                     <p style={{ margin: 0, fontWeight: 600, fontSize: '1rem', color: 'var(--color-text-main)' }}>Horario</p>
