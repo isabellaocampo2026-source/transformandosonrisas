@@ -37,7 +37,7 @@ export default function Contact() {
                                 backgroundColor: 'var(--color-bg-white)', border: '1px solid var(--color-border)',
                                 textDecoration: 'none', color: 'var(--color-text-main)'
                             }}>
-                                <div style={{ width: '44px', height: '44px', borderRadius: '50%', backgroundColor: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                                <div style={{ width: '44px', height: '44px', borderRadius: '50%', backgroundColor: 'var(--color-primary)', border: '2px solid #ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                                     <Phone size={20} style={{ color: '#ffffff' }} />
                                 </div>
                                 <div>
@@ -53,7 +53,7 @@ export default function Contact() {
                                 backgroundColor: 'var(--color-bg-white)', border: '1px solid var(--color-border)',
                                 textDecoration: 'none', color: 'var(--color-text-main)'
                             }}>
-                                <div style={{ width: '44px', height: '44px', borderRadius: '50%', backgroundColor: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                                <div style={{ width: '44px', height: '44px', borderRadius: '50%', backgroundColor: 'var(--color-primary)', border: '2px solid #ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                                     <Mail size={20} style={{ color: '#ffffff' }} />
                                 </div>
                                 <div style={{ overflow: 'hidden' }}>
@@ -69,7 +69,7 @@ export default function Contact() {
                                 backgroundColor: 'var(--color-bg-white)', border: '1px solid var(--color-border)',
                                 textDecoration: 'none', color: 'var(--color-text-main)'
                             }}>
-                                <div style={{ width: '44px', height: '44px', borderRadius: '50%', backgroundColor: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                                <div style={{ width: '44px', height: '44px', borderRadius: '50%', backgroundColor: 'var(--color-primary)', border: '2px solid #ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                                     <MapPin size={20} style={{ color: '#ffffff' }} />
                                 </div>
                                 <div>
@@ -84,7 +84,7 @@ export default function Contact() {
                                 padding: '20px', borderRadius: 'var(--radius-lg)',
                                 backgroundColor: 'var(--color-bg-white)', border: '1px solid var(--color-border)'
                             }}>
-                                <div style={{ width: '44px', height: '44px', borderRadius: '50%', backgroundColor: 'var(--color-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                                <div style={{ width: '44px', height: '44px', borderRadius: '50%', backgroundColor: 'var(--color-primary)', border: '2px solid #ffffff', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                                     <Clock size={20} style={{ color: '#ffffff' }} />
                                 </div>
                                 <div>
