@@ -8,8 +8,8 @@ export const metadata = {
 
 export default function DoctorProfile() {
     return (
-        <main style={{ backgroundColor: 'var(--color-bg-light)' }}>
-            <section className="section doctor-section" style={{ paddingTop: '120px' }}>
+        <main style={{ backgroundColor: 'var(--color-bg-white)' }}>
+            <section className="section doctor-section" style={{ paddingTop: '100px' }}>
                 <div className="container">
                     <div className="doctor-grid">
                         <div className="doctor-image-wrapper animate-fade-in" style={{ position: 'relative', width: '100%', aspectRatio: '3/4' }}>

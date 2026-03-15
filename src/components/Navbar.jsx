@@ -56,7 +56,7 @@ export default function Navbar() {
                 <Link href="/dentista" onClick={() => setIsMobileMenuOpen(false)}>La Doctora</Link>
                 <Link href="/blog" onClick={() => setIsMobileMenuOpen(false)}>Blog</Link>
                 <Link href="/contacto" onClick={() => setIsMobileMenuOpen(false)}>Contacto</Link>
-                <a href="https://wa.me/528182522667?text=Hola%20Dra.%20Carmen%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20o%20recibir%20m%C3%A1s%20informaci%C3%B3n." target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ marginTop: 'var(--spacing-md)' }} onClick={() => setIsMobileMenuOpen(false)}>
+                <a href="https://wa.me/528182522667?text=Hola%20Dra.%20Carmen%2C%20me%20gustar%C3%ADa%20agendar%20una%20cita%20o%20recibir%20m%C3%A1s%20informaci%C3%B3n." target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ marginTop: 'var(--spacing-md)', color: '#ffffff' }} onClick={() => setIsMobileMenuOpen(false)}>
                     Agendar Cita
                 </a>
             </div>
