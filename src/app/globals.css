@@ -268,20 +268,28 @@ img {
 }
 
 /* Animations */
+/* Modified to allow instant screenshots: 
+   The element starts at opacity 1 for a split second (animation-delay),
+   then animates from opacity 0 back to 1. */
 @keyframes fadeIn {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(10px);
   }
 
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
 .animate-fade-in {
-  animation: fadeIn 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  /* Start visible by default for the screenshot tool */
+  opacity: 1;
+  /* Wait a tiny fraction of a second before starting the animation */
+  animation: fadeIn 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards 0.3s;
+  /* During the delay, force opacity to 0 so it doesn't flash twice to the human eye */
+  animation-fill-mode: both;
 }
 
 /* Visibility Utilities */
