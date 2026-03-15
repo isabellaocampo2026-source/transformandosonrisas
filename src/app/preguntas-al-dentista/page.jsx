@@ -48,20 +48,20 @@ export default function FAQ() {
     return (
         <main style={{ paddingTop: '150px', backgroundColor: 'var(--color-bg-white)', minHeight: '100vh' }}>
             <section className="section">
-                <div className="container" style={{ maxWidth: '800px' }}>
-                    <div className="text-center" style={{ marginBottom: 'var(--spacing-4xl)' }}>
+                <div className="container" style={{ maxWidth: '800px', paddingLeft: 'var(--spacing-sm)', paddingRight: 'var(--spacing-sm)' }}>
+                    <div className="text-center" style={{ marginBottom: 'var(--spacing-2xl)' }}>
                         <h1 className="hero-title" style={{ fontSize: '3rem' }}>Preguntas al Dentista</h1>
                         <p className="hero-subtitle" style={{ margin: '0 auto' }}>Resolvemos tus dudas más comunes sobre la salud bucal.</p>
                     </div>
 
                     <div className="faq-list flex flex-col gap-lg">
                         {faqs.map((faq, index) => (
-                            <div key={index} className="faq-item glass" style={{ padding: 'var(--spacing-xl)', borderRadius: 'var(--radius-lg)' }}>
+                            <div key={index} className="faq-item glass" style={{ padding: 'var(--spacing-md) var(--spacing-md)', borderRadius: 'var(--radius-lg)' }}>
                                 <div className="faq-question flex gap-md" style={{ alignItems: 'flex-start', marginBottom: 'var(--spacing-md)' }}>
                                     <HelpCircle className="text-primary flex-shrink-0" style={{ marginTop: '4px', color: 'var(--color-primary)' }} />
                                     <h3 style={{ fontSize: '1.25rem', color: 'var(--color-primary-dark)', margin: 0, fontWeight: 700 }}>{faq.q}</h3>
                                 </div>
-                                <div className="faq-answer" style={{ paddingLeft: 'calc(24px + var(--spacing-md))' }}>
+                                <div className="faq-answer" style={{ paddingLeft: '0' }}>
                                     <p style={{ margin: 0, color: 'var(--color-text-main)', lineHeight: 1.6 }}>{faq.a}</p>
                                 </div>
                             </div>
