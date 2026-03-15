@@ -58,12 +58,12 @@ export default function Contact() {
                             </div>
                         </div>
 
-                        <div className="map-container" style={{ width: '100%', borderRadius: 'var(--radius-xl)', overflow: 'hidden', height: '100%', minHeight: '400px', boxShadow: 'var(--shadow-md)' }}>
+                        <div className="map-container" style={{ width: '100%', borderRadius: 'var(--radius-xl)', overflow: 'hidden', minHeight: '350px', boxShadow: 'var(--shadow-md)' }}>
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4542.226334784527!2d-100.36099632374538!3d25.66070457741542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bdfad6f054b3%3A0x16ecf6705217ad1e!2sR%C3%ADo%20San%20Lorenzo%20609%2C%20Fuentes%20del%20Valle%2C%2066224%20San%20Pedro%20Garza%20Garc%C3%ADa%2C%20N.L.%2C%20M%C3%A9xico!5e1!3m2!1ses-419!2sco!4v1773057518971!5m2!1ses-419!2sco"
                                 width="100%"
-                                height="100%"
-                                style={{ border: 0 }}
+                                height="350"
+                                style={{ border: 0, display: 'block' }}
                                 allowFullScreen
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
