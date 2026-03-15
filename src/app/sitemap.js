@@ -1,5 +1,5 @@
 export default function sitemap() {
-    const baseUrl = 'https://transformandosonrisas.com.mx';
+    const baseUrl = 'https://www.transformandosonrisas.com.mx';
 
     // Definición de las páginas estáticas
     const routes = [

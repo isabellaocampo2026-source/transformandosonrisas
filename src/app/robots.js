@@ -5,6 +5,6 @@ export default function robots() {
             allow: '/',
             disallow: '/private/',
         },
-        sitemap: 'https://transformandosonrisas.com.mx/sitemap.xml',
+        sitemap: 'https://www.transformandosonrisas.com.mx/sitemap.xml',
     }
 }

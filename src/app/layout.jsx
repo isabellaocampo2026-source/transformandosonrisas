@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-primary' });
 const bebas = Bebas_Neue({ weight: '400', subsets: ['latin'], variable: '--font-heading' });
 
 export const metadata = {
-    metadataBase: new URL('https://transformandosonrisas.com.mx'),
+    metadataBase: new URL('https://www.transformandosonrisas.com.mx'),
     title: 'Dentista en San Pedro Garza García | Dra. Carmen Carrillo',
     description: 'Encuentra tu clínica dental de confianza cerca de ti en San Pedro Garza García. Odontología integral de lujo, diseño de sonrisa y tratamientos de vanguardia.',
 };
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
         "@context": "https://schema.org",
         "@type": "Dentist",
         "name": "Dra. Carmen Carrillo Viejo | Transformando Sonrisas",
-        "url": "https://transformandosonrisas.com.mx",
+        "url": "https://www.transformandosonrisas.com.mx",
         "telephone": "+528182522667",
         "address": {
             "@type": "PostalAddress",
