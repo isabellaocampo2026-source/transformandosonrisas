@@ -51,6 +51,7 @@ export default function TreatmentLayout({ title, subtitle, imageSrc, children })
                             target="_blank"
                             rel="noopener noreferrer"
                             className="btn btn-primary"
+                            style={{ color: '#ffffff' }}
                         >
                             Agendar Cita Ahora
                         </a>

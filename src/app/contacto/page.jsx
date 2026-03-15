@@ -15,7 +15,7 @@ export default function Contact() {
                         <p className="hero-subtitle" style={{ margin: '0 auto' }}>Estamos aquí para cuidar de tu sonrisa. Contáctanos para agendar una cita o resolver tus dudas.</p>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-4xl" style={{ alignItems: 'start' }}>
+                    <div className="contact-grid gap-4xl" style={{ alignItems: 'start' }}>
                         <div className="contact-info-card glass" style={{ padding: 'var(--spacing-2xl)', borderRadius: 'var(--radius-xl)' }}>
                             <h3 style={{ fontSize: '1.5rem', marginBottom: 'var(--spacing-lg)', color: 'var(--color-primary-dark)' }}>Información de Contacto</h3>
 

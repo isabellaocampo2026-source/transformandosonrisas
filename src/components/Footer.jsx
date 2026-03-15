@@ -56,7 +56,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Mail size={20} />
-                                <a href="mailto:carmencarrillo.consultorio@gmail.com">carmencarrillo.consultorio@gmail.com</a>
+                                <a href="mailto:carmencarrillo.consultorio@gmail.com" style={{ overflowWrap: 'break-word', wordBreak: 'break-all' }}>carmencarrillo.consultorio@gmail.com</a>
                             </li>
                             <li>
                                 <MapPin size={20} />
